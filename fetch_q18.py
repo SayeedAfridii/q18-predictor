@@ -5,11 +5,11 @@ from datetime import datetime
 
 API_KEY =  os.environ["MTA_API_KEY"]
 
-url = "http://bustime.mta.info/api/siri/vehicle-monitoring.json"
+url = "https://bustime-classic.mta.info/api/siri/stop-monitoring.json"
 params = {
     "key": API_KEY,
     "LineRef": "Q18",
-    "VehicleMonitoringDetailLevel": "calls"
+    "StopMonitoringDetailLevel": "calls"
 }
 
 FILE = "q18_data_v2.csv"
