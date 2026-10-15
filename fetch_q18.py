@@ -8,9 +8,10 @@ API_KEY =  os.environ["MTA_API_KEY"]
 url = "https://bustime-classic.mta.info/api/siri/stop-monitoring.json"
 params = {
     "key": API_KEY,
-    "LineRef": "Q18",
-    "StopMonitoringDetailLevel": "calls"
-    "MonitoringRef":"550592"
+    "LineRef": "MTA NYCT_Q18",
+    "StopMonitoringDetailLevel": "calls",
+    "MonitoringRef":"550592",
+    "version":"2"
 }
 
 FILE = "q18_data_v2.csv"
